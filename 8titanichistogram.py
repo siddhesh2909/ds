@@ -3,10 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load Titanic dataset
 df = sns.load_dataset('titanic')
 
-# Fill missing 'age' values with mean
 df['age'] = df['age'].fillna(df['age'].mean())
 
 # A. Distribution Plots
